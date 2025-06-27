@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect With Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      background: 
+        url('https://www.transparenttextures.com/patterns/black-felt.png') repeat,
+        linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #444;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255,255,255,0.07);
+    }
+    .profile h1 {
+      margin-top: 15px;
+      font-size: 1.8rem;
+    }
+    .profile p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 400px;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2d2d2d;
+      backdrop-filter: blur(6px);
+    }
+
+    .link i {
+      margin-right: 12px;
+      font-size: 1.2rem;
+    }
+
+    .facebook {
+      background: rgba(59, 89, 152, 0.35);
+    }
+
+    .facebook:hover {
+      background: rgba(59, 89, 152, 0.5);
+    }
+
+    .instagram {
+      background: linear-gradient(135deg, rgba(253, 29, 106, 0.3), rgba(131, 58, 180, 0.3));
+    }
+
+    .instagram:hover {
+      background: linear-gradient(135deg, rgba(253, 29, 106, 0.5), rgba(131, 58, 180, 0.5));
+    }
+
+    .whatsapp {
+      background: rgba(37, 211, 102, 0.3);
+    }
+
+    .whatsapp:hover {
+      background: rgba(37, 211, 102, 0.5);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: #666;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile">
+    <img src="https://i.postimg.cc/CMQKWpqK/442243847-1361508811209357-3261672778481576778-n.jpg" alt="Profile">
+    <h1>Mosaddek Hossain</h1>
+    <p>Welcome, connect with me here</p>
+  </div>
+
+  <div class="links">
+    <a href="https://www.facebook.com/share/1MwCUjtzif/?mibextid=wwXIfr" target="_blank" class="link facebook">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/a_cobra_1?igsh=eGx6bmFvdnpwZTJi" target="_blank" class="link instagram">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/971501374702" target="_blank" class="link whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Mosaddek Hossain — All rights reserved.
+  </footer>
+
+</body>
+</html>
